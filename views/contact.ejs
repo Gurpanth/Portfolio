@@ -6,6 +6,7 @@
 </div>
 <!--Building a container for the content-->
 <div class="container"style="height:420px;">
+    <div class="contactInfo" style="float:right;">
         <address>
       <strong>Gurpanth's Portfolio</strong><br>
       364 Duckworth Street<br>
@@ -17,7 +18,28 @@
       <strong>Gurpanth Singh</strong><br>
       <a href="mailto:#">gurpanth@hotmail.com</a>
     </address>
+    </div>
+    <div class="contactForms">
+<form id="contactForm" action="#" style="float:left;">
+	<div class="row">
+		<label for="name">Your name:</label><br />
+		<input value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="email">Your email:</label><br />
+		<input value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="message">Your message:</label><br />
+		<textarea rows="7" cols="30"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" />
+</form>	
+    </div>
 </div>
+</div>
+
+
 </body>
 <%- include partials/footer.ejs %>
 </html>
